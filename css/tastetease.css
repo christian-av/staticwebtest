@@ -1,0 +1,165 @@
+/* Add your CSS styles here */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden; /* Ensure the dripping sauce doesn't cause horizontal scroll */
+}
+
+/* Navigation Bar | Interactive */
+.navbar {
+    background-color: #fff; /* Change to white background */
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000; /* Change to black text */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Display the hamburger icon and hide the regular nav links */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #fff; /* Change to white background */
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding: 30px; /* Add padding for equal margins */
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin-bottom: 15px; /* Adjust as needed */
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Placeholder for Sections */
+section {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff; /* Change to white background */
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #fff; /* Change to white background */
+    color: #000; /* Change to black text */
+    padding: 10px;
+    font-size: small;
+}
+
+/* Homepage Styles */
+.homepage {
+    text-align: left;
+    padding: 50px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-section {
+    flex: 1;
+}
+
+.homepage h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000; /* Change to black text */
+}
+
+.homepage p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Food image */
+.food-image {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width if desired */
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+/* Our Services Section */
+.our-services {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Qual Food */
+.QualFood {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Our Offer */
+.OurOffer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Review */
+.Review {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* TasteTease Logo */
+.tastetease-logo {
+    width: 80px; /* Adjust the width as needed */
+    margin-right: 30px;
+}
+
+.nav-links a.active {
+    background-color: #d9534f; /* Highlight color for the active tab */
+    color: #fff; /* Text color for the active tab */
+    padding: 10px 15px;
+    }

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tastetease.css">
+    <link rel="icon" href="resource/webfavico.png" type="image/x-icon">
+    <title>TasteTease</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow-x: hidden; /* Ensure the dripping sauce doesn't cause horizontal scroll */
+        }
+
+        /* Navigation Bar | Interactive */
+        .navbar {
+            background-color: #fff; /* Change to white background */
+            padding: 15px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #000; /* Change to black text */
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 24px;
+        }
+        
+        @media screen and (max-width: 768px) {
+    /* Display the hamburger icon and hide the regular nav links */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #fff; /* Change to white background */
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding: 30px; /* Add padding for equal margins */
+    }
+    
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .nav-links a {
+        margin-bottom: 15px; /* Adjust as needed */
+    }
+    
+    .nav-links a.active {
+    background-color: #d9534f; /* Highlight color for the active tab */
+    color: #fff; /* Text color for the active tab */
+    }
+    
+    .hamburger {
+        display: block;
+    }
+}
+
+        
+        /* Placeholder for Sections */
+        section {
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff; /* Change to white background */
+            border-radius: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #fff; /* Change to white background */
+            color: #000; /* Change to black text */
+            padding: 10px;
+            font-size: small;
+        }
+        
+        /* Homepage Styles */
+        .homepage {
+            text-align: left;
+            padding-top: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .content-section {
+            flex: 1;
+        }
+
+        .homepage h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+            color: #000; /* Change to black text */
+        }
+        
+        .homepage p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        
+        .cta-button {
+            background-color: #d9534f;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        /* Food image */
+        .food-image {
+            width: 100%; /* Adjust the width as needed */
+            max-width: 400px; /* Set a maximum width if desired */
+            border-radius: 50px;
+            margin-left: 20px;
+        }
+        
+        /* Our Services Section */
+        .our-services {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Qual Food */
+        .QualFood {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Our Offer */
+        .OurOffer {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        /* Review */
+        .Review {
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        /* TasteTease Logo */
+        .tastetease-logo {
+            width: 80px; /* Adjust the width as needed */
+            margin-right: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar Section -->
+    <div class="navbar">
+        <span class="hamburger" id="hamburger">&#9776;</span>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <!-- TasteTease Logo -->
+        <img src="resource/webico.png" alt="TasteTease Logo" class="tastetease-logo">
+    </div>   
+
+    <!-- Homepage Section -->
+    <section class="homepage">
+        <div class="content-section">
+            <h1>Good Food & Good Moments </h1>
+            <p>Unlock a world of taste with TasteTease – where every dish is a tempting tale.</p>
+            <a href="#" class="cta-button">View Menu</a>
+        </div>
+
+        <!-- Pizza Image -->
+        <img src="resource/foodyw.png" alt="food" class="food-image" style="width: 150%; max-width: 1000px; border-radius:50px;">
+    </section>
+
+    <!-- Our Services Section -->
+    <section class="our-services">
+        <p>Our Services</p>
+        <h1>Why Choose Us</h1>
+        <p>Ready to tantalize your taste buds? Dive into a world of flavor with Taste Tease. Our culinary creations are a taste tease, inviting you to savor every moment of delicious excitement. Unleash your cravings and choose taste that teases at its best!.</p>
+        <!-- Add your content for Our Services here -->
+    </section>
+
+    <!-- Three -->
+    <section class="QualFood">
+        <p>Quality Food</p>
+        <h1>Our Popular Menu</h1>
+        <p>The Food at your doorstep. Why starve when you have us. You hunger partner. Straight out the oven to your doorstep.</p>
+        <!-- Add your content for Why Choose Us here -->
+    </section>
+
+     <!-- Four -->
+    <section class="OurOffer">
+        <p>Our Offer</p>
+        <h1>Get The Best Offer</h1>
+        <p>Eat the food you dream about at affordable prices. No need to come to us, just call us.</p>
+        <!-- Add your content for Why Choose Us here -->
+    </section>
+
+     <!-- Five -->
+    <section class="Review">
+        <p>Review</p>
+        <h1>What Our Clients Say</h1>
+        <p>Eat the food you dream about at affordable prices. No need to come to us, just call us.</p>
+        <!-- Add your content for Why Choose Us here -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        Created by: <strong>CHRISTIAN AVILO</strong> | <strong>ALLIYAH MAE O. REÑOS</strong>
+        <br>
+        <small style="color: #000000"><strong>WEB SYSTEMS AND TECHNOLOGIES</strong> BSIT-IT2R1</small>
+    </footer>
+    
+    <script src="js/script.js"></script>
+
+</body>
+</html>
