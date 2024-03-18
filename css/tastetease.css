@@ -37,34 +37,46 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    /* Display the hamburger icon and hide the regular nav links */
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: left;
-        position: absolute;
-        top: 40px;
-        left: 0;
-        background-color: #fff; /* Change to white background */
-        border-radius: 15px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-        padding: 30px; /* Add padding for equal margins */
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links a {
-        margin-bottom: 15px; /* Adjust as needed */
-    }
-
-    .hamburger {
-        display: block;
-    }
+/* Display the hamburger icon and hide the regular nav links */
+.nav-links {
+display: none;
+flex-direction: column;
+width: 100%;
+text-align: left;
+position: absolute;
+top: 40px;
+left: 0;
+background-color: #fff; /* Change to white background */
+border-radius: 15px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+z-index: 1;
+padding: 30px; /* Add padding for equal margins */
 }
+
+.nav-links.show {
+display: flex;
+}
+
+.nav-links a {
+margin-bottom: 15px; /* Adjust as needed */
+}
+
+.nav-links a.active {
+background-color: #d9534f; /* Highlight color for the active tab */
+color: #fff; /* Text color for the active tab */
+}
+
+.hamburger {
+display: block;
+}
+}
+
+.nav-links a.active {
+background-color: #d9534f;
+color: #fff;
+padding: 10px 15px;
+}
+
 
 /* Placeholder for Sections */
 section {
@@ -87,7 +99,10 @@ footer {
 /* Homepage Styles */
 .homepage {
     text-align: left;
-    padding: 50px;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -132,17 +147,15 @@ footer {
 .our-services {
     text-align: center;
     margin-top: 30px;
-}
-
-/* Qual Food */
-.QualFood {
-    text-align: center;
-    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 /* Our Offer */
 .OurOffer {
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
     margin-top: 30px;
 }
 
@@ -158,8 +171,22 @@ footer {
     margin-right: 30px;
 }
 
-.nav-links a.active {
-    background-color: #d9534f; /* Highlight color for the active tab */
-    color: #fff; /* Text color for the active tab */
-    padding: 10px 15px;
-    }
+/* Living Well Section */
+.living-well {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+
+.living-well-image {
+    width: 40%; /* Set the width of the image */
+    border-radius: 10px;
+    padding-right: 10px;
+}
+
+.living-well-content {
+    flex: 1;
+    padding-right: 20px; /* Add padding to separate content from image */
+}

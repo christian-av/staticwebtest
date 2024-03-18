@@ -83,6 +83,12 @@
         display: block;
     }
 }
+        
+    .nav-links a.active {
+    background-color: #d9534f;
+    color: #fff;
+    padding: 10px 15px;
+    }
 
         
         /* Placeholder for Sections */
@@ -107,6 +113,9 @@
         .homepage {
             text-align: left;
             padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 10px;
             position: relative;
             display: flex;
             justify-content: space-between;
@@ -116,7 +125,7 @@
         .content-section {
             flex: 1;
         }
-
+        
         .homepage h1 {
             font-size: 45px;
             margin-bottom: 20px;
@@ -138,7 +147,7 @@
             border-radius: 5px;
             display: inline-block;
         }
-
+        
         /* Food image */
         .food-image {
             width: 100%; /* Adjust the width as needed */
@@ -151,17 +160,15 @@
         .our-services {
             text-align: center;
             margin-top: 30px;
+            padding-left: 50px;
+            padding-right: 50px;
         }
-
-        /* Qual Food */
-        .QualFood {
-            text-align: center;
-            margin-top: 30px;
-        }
-
+        
         /* Our Offer */
         .OurOffer {
             text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
             margin-top: 30px;
         }
         
@@ -176,6 +183,26 @@
             width: 80px; /* Adjust the width as needed */
             margin-right: 30px;
         }
+        
+        /* Living Well Section */
+        .living-well {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            position: relative;
+        }
+
+        .living-well-image {
+            width: 40%; /* Set the width of the image */
+            border-radius: 10px;
+            padding-right: 10px;
+        }
+
+        .living-well-content {
+            flex: 1;
+            padding-right: 20px; /* Add padding to separate content from image */
+        }
     </style>
 </head>
 <body>
@@ -185,7 +212,7 @@
         <span class="hamburger" id="hamburger">&#9776;</span>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a href="recipe.html">Recipes</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
@@ -213,14 +240,15 @@
         <!-- Add your content for Our Services here -->
     </section>
 
-    <!-- Three -->
-    <section class="QualFood">
-        <p>Quality Food</p>
-        <h1>Our Popular Menu</h1>
-        <p>The Food at your doorstep. Why starve when you have us. You hunger partner. Straight out the oven to your doorstep.</p>
-        <!-- Add your content for Why Choose Us here -->
+    <!-- Living Well Section -->
+    <section class="living-well">
+        <img src="resource/pin.png" alt="pin" class="living-well-image">
+        <div class="living-well-content">
+            <h1>Living well begins with eating well</h1>
+            <p>Savor the essence of good living through our carefully crafted recipes and culinary inspirations. From kitchen novices to seasoned chefs, find something to delight every palate and elevate every meal. Join us in celebrating the joy of food, one dish at a time.</p>
+        </div>
     </section>
-
+     
      <!-- Four -->
     <section class="OurOffer">
         <p>Our Offer</p>
@@ -228,15 +256,8 @@
         <p>Eat the food you dream about at affordable prices. No need to come to us, just call us.</p>
         <!-- Add your content for Why Choose Us here -->
     </section>
-
-     <!-- Five -->
-    <section class="Review">
-        <p>Review</p>
-        <h1>What Our Clients Say</h1>
-        <p>Eat the food you dream about at affordable prices. No need to come to us, just call us.</p>
-        <!-- Add your content for Why Choose Us here -->
-    </section>
-
+    
+    
     <!-- Footer -->
     <footer>
         Created by: <strong>CHRISTIAN AVILO</strong> | <strong>ALLIYAH MAE O. REÑOS</strong>
